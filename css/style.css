@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Philosopher:wght@400;700&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   font-family: var(--font2);
+}
+
+body {
+   background: #f7d794;
+}
+
+:root {
+   --font: 'Philosopher', sans-serif;
+   --font2: 'Open Sans', sans-serif;
+   --first-text-color: #eb4d4b;
+   --title-color: #34495e;
+   --pra-color: #ffffff;
+}
+
+section {
+   padding: 30px 0;
+}
+
+.container {
+   width: 90%;
+   margin: auto;
+}
+
+.title {
+   width: 100%;
+   text-align: center;
+}
+
+.title h1 {
+   font-size: 3.5rem;
+   padding: 30px 0;
+   font-family: var(--font);
+}
+
+.first-text-color {
+   color: var(--first-text-color);
+}
+
+.title-color {
+   color: var(--title-color);
+}
+
+.pra-color {
+   color: var(--pra-color);
+   font-weight: bold;
+}
+
+.title h2 {
+   font-size: 2rem;
+   padding: 20px 0;
+}
+
+.title p {
+   padding: 15px 0;
+   font-size: 20px;
+}
+
+/* Demo Section */
+
+.demo-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.demo {
+   text-align: center;
+   margin: 20px 0;
+}
+
+.demo-box {
+   width: 100%;
+   padding: 0 30px;
+   margin-bottom: 50px;
+   font-size: 0;
+   vertical-align: top;
+   box-sizing: border-box;
+   margin: 10px;
+   overflow: hidden;
+
+}
+
+.demo-img {
+   display: block;
+   width: 100%;
+   height: 275px;
+   overflow: hidden;
+   position: relative;
+   border: 1px solid var(--main-color);
+   box-shadow: 0 3px 12px -1px rgb(7 10 25 / 10%), 0 22px 27px -30px rgb(7 10 25 / 10%);
+   box-shadow: 0 3px 12px -1px rgb(113 105 254 / 50%), 0 22px 27px -20px rgb(113 105 254 / 20%);
+   border-radius: 7px;
+   margin: 0 auto;
+   border: 2px solid #fff;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: top center;
+   transition: all 1500ms ease;
+}
+
+.demo-img.img1 {
+   background-image: url(../img/the-moon-site-preview.png);
+   transition: all 5s ease;
+}
+
+.demo-img.img2 {
+   background-image: url(../img/home-classic.png);
+}
+
+.demo-img.img3 {
+   background-image: url(../img/coming-soon.png);
+}
+
+.demo-img.img4 {
+   background-image: url(../img/coming-soon.png);
+}
+
+.demo-img.img5 {
+   background-image: url(../img/coming-soon.png);
+}
+
+.demo-img:hover {
+   background-position: bottom center;
+}
+
+.btn {
+   display: inline-block;
+   padding: 10px 30px;
+   background: linear-gradient(to right, #7169FE, #A951F3);
+   color: #fff;
+   font-size: 15px;
+   box-shadow: 0px 3px 6px rgb(0 0 0 / 10%);
+   transition: 0.2s all;
+}
+
+.btn:hover {
+   transform: translateY(-2px);
+   color: #fff;
+   box-shadow: none;
+   background: linear-gradient(to right, #A951F3, #7169FE);
+}
+
+@media only screen and (max-width: 890px) {
+   .demo-container {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .title h1 {
+      font-size: 2.5rem;
+   }
+
+   .title h2 {
+      font-size: 1.5rem;
+   }
+
+   .title p {
+      font-size: 18px;
+   }
+}
+
+@media only screen and (max-width: 570px) {
+   .demo-container {
+      grid-template-columns: 1fr;
+   }
+
+   .title h1 {
+      font-size: 2rem;
+   }
+
+   .title h2 {
+      font-size: 1rem;
+   }
+
+   .title p {
+      font-size: 16px;
+   }
+}
